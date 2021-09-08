@@ -14,6 +14,7 @@ script
 form
 fieldset
 input
+label
 button
 div
 iframe

@@ -1,0 +1,134 @@
+#container{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.parent{
+    text-align: center;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f2f5;
+    
+}
+.container{
+    background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+    height: 420px;
+    width: 330px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 20px;
+}
+h2{
+    color: #fff;
+}
+img{
+    height: 100px;
+}
+.floating-label-group{
+    position: relative;
+    margin: 35px 0;
+    border-radius: 4px;
+}
+.form-control{
+    width: 300px;
+}
+.floating-label-group .floating-label{
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 5px;
+    left: 12px;
+    transition: all 0.1s ease;
+}
+.floating-label-group input:focus ~ .floating-label,
+.floating-label-group input:not(:focus):valid ~ .floating-label{
+    top: -20px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 14px;
+    opacity: 1;
+    color: #fff;
+}
+#submit{
+    border: none;
+    padding: 10px;
+    color: #071a52;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 100px;
+    font-weight: 600;
+}
+footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+#submit:hover{
+    color:green;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  input:focus {
+    background-color: #cccccc;
+  }
+@media only screen and (max-width: 400px) {
+    .parent{
+        overflow: hidden;
+    }
+    .container{
+        max-width: 330px;
+        width: auto;
+    }
+    .form-control{
+        max-width: 300px;
+        width: auto;
+    }
+    .floating-label-group .floating-label{
+        top: -18px;
+    }
+    img{
+        width: 50%;
+        height: auto;
+    }
+  }
